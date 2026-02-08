@@ -1,0 +1,1999 @@
+{
+  "collections": [
+    {
+      "id": "VariableCollectionId:8:52",
+      "name": "基础色彩梯度",
+      "modes": [
+        {
+          "modeId": "8:1",
+          "name": "light"
+        }
+      ],
+      "defaultModeId": "8:1",
+      "variables": [
+        {
+          "id": "VariableID:10:413",
+          "name": "Full/Transparency/black 100%",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.10196078568696976,
+              "g": 0.10588235408067703,
+              "b": 0.11372549086809158,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "TEXT_FILL"
+          ]
+        },
+        {
+          "id": "VariableID:8:170",
+          "name": "Full/white/white 100%",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:18:367",
+          "name": "Full/Transparency/black 60%",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.10196078568696976,
+              "g": 0.10588235408067703,
+              "b": 0.11372549086809158,
+              "a": 0.6000000238418579
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "TEXT_FILL"
+          ]
+        },
+        {
+          "id": "VariableID:12:53",
+          "name": "Full/Transparency/black 40%",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.10196078568696976,
+              "g": 0.10588235408067703,
+              "b": 0.11372549086809158,
+              "a": 0.4000000059604645
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:12:57",
+          "name": "Full/Transparency/black 20%",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.10196078568696976,
+              "g": 0.10588235408067703,
+              "b": 0.11372549086809158,
+              "a": 0.20000000298023224
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:18:366",
+          "name": "Full/Transparency/black 16%",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.10196078568696976,
+              "g": 0.10588235408067703,
+              "b": 0.11372549086809158,
+              "a": 0.1599999964237213
+            }
+          },
+          "description": "重描边",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:10:409",
+          "name": "Full/Transparency/black 12%",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.10196078568696976,
+              "g": 0.10588235408067703,
+              "b": 0.11372549086809158,
+              "a": 0.11999999731779099
+            }
+          },
+          "description": "disable、线框按钮",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "TEXT_FILL"
+          ]
+        },
+        {
+          "id": "VariableID:18:365",
+          "name": "Full/Transparency/black 8%",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.10196078568696976,
+              "g": 0.10588235408067703,
+              "b": 0.11372549086809158,
+              "a": 0.07999999821186066
+            }
+          },
+          "description": "分割线",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "STROKE_COLOR"
+          ]
+        },
+        {
+          "id": "VariableID:18:364",
+          "name": "Full/Transparency/black 5%",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.10196078568696976,
+              "g": 0.10588235408067703,
+              "b": 0.11372549086809158,
+              "a": 0.05000000074505806
+            }
+          },
+          "description": "标签灰色底，输入框默认底色",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "FRAME_FILL",
+            "SHAPE_FILL"
+          ]
+        },
+        {
+          "id": "VariableID:10:412",
+          "name": "Full/Grey",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.9607843160629272,
+              "g": 0.9607843160629272,
+              "b": 0.9607843160629272,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "TEXT_FILL"
+          ]
+        },
+        {
+          "id": "VariableID:8:281",
+          "name": "S-Pink/--semi-S-Pink-0",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.95686274766922,
+              "b": 0.9686274528503418,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:282",
+          "name": "S-Pink/--semi-S-Pink-1",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.8745098114013672,
+              "b": 0.9098039269447327,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:283",
+          "name": "S-Pink/--semi-S-Pink-2",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.7450980544090271,
+              "b": 0.8313725590705872,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:284",
+          "name": "S-Pink/--semi-S-Pink-3",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.6196078658103943,
+              "b": 0.7568627595901489,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:285",
+          "name": "S-Pink/--semi-S-Pink-4",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.4901960790157318,
+              "b": 0.6941176652908325,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:286",
+          "name": "S-Pink/--semi-S-Pink-5",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.364705890417099,
+              "b": 0.6392157077789307,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:287",
+          "name": "S-Pink/--semi-S-Pink-6",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.8588235378265381,
+              "g": 0.2862745225429535,
+              "b": 0.5529412031173706,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:288",
+          "name": "S-Pink/--semi-S-Pink-7",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.7215686440467834,
+              "g": 0.21960784494876862,
+              "b": 0.47058823704719543,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:289",
+          "name": "S-Pink/--semi-S-Pink-8",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.5803921818733215,
+              "g": 0.16078431904315948,
+              "b": 0.3843137323856354,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:290",
+          "name": "S-Pink/--semi-S-Pink-9",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.43921568989753723,
+              "g": 0.10588235408067703,
+              "b": 0.29411765933036804,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:341",
+          "name": "S-Indigo/--semi-S-Indigo-0",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.9647058844566345,
+              "g": 0.9725490212440491,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:342",
+          "name": "S-Indigo/--semi-S-Indigo-1",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.8901960849761963,
+              "g": 0.9137254953384399,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:343",
+          "name": "S-Indigo/--semi-S-Indigo-2",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.7803921699523926,
+              "g": 0.8274509906768799,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:344",
+          "name": "S-Indigo/--semi-S-Indigo-3",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.6745098233222961,
+              "g": 0.7333333492279053,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:345",
+          "name": "S-Indigo/--semi-S-Indigo-4",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.5647059082984924,
+              "g": 0.6352941393852234,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:346",
+          "name": "S-Indigo/--semi-S-Indigo-5",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.45490196347236633,
+              "g": 0.5372549295425415,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:347",
+          "name": "S-Indigo/--semi-S-Indigo-6",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.364705890417099,
+              "g": 0.4313725531101227,
+              "b": 0.8588235378265381,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:348",
+          "name": "S-Indigo/--semi-S-Indigo-7",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.2862745225429535,
+              "g": 0.33725491166114807,
+              "b": 0.7215686440467834,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:349",
+          "name": "S-Indigo/--semi-S-Indigo-8",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.21176470816135406,
+              "g": 0.24705882370471954,
+              "b": 0.5803921818733215,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:350",
+          "name": "S-Indigo/--semi-S-Indigo-9",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.14901961386203766,
+              "g": 0.1725490242242813,
+              "b": 0.43921568989753723,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:351",
+          "name": "S-Orange/--semi-S-Orange-0",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.9803921580314636,
+              "b": 0.9450980424880981,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:352",
+          "name": "S-Orange/--semi-S-Orange-1",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.9490196108818054,
+              "b": 0.8470588326454163,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:353",
+          "name": "S-Orange/--semi-S-Orange-2",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.886274516582489,
+              "b": 0.6941176652908325,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:354",
+          "name": "S-Orange/--semi-S-Orange-3",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.8156862854957581,
+              "b": 0.5411764979362488,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:355",
+          "name": "S-Orange/--semi-S-Orange-4",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.7333333492279053,
+              "b": 0.38823530077934265,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:356",
+          "name": "S-Orange/--semi-S-Orange-5",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.6432692408561707,
+              "b": 0.23557692766189575,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:357",
+          "name": "S-Orange/--semi-S-Orange-6",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.8352941274642944,
+              "g": 0.49803921580314636,
+              "b": 0.1882352977991104,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:358",
+          "name": "S-Orange/--semi-S-Orange-7",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.6666666865348816,
+              "g": 0.3686274588108063,
+              "b": 0.14509804546833038,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:359",
+          "name": "S-Orange/--semi-S-Orange-8",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.501960813999176,
+              "g": 0.2549019753932953,
+              "b": 0.10196078568696976,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:360",
+          "name": "S-Orange/--semi-S-Orange-9",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.3333333432674408,
+              "g": 0.15294118225574493,
+              "b": 0.06666667014360428,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:361",
+          "name": "S-Purple/--semi-S-Purple-0",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.9921568632125854,
+              "g": 0.95686274766922,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:362",
+          "name": "S-Purple/--semi-S-Purple-1",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.9803921580314636,
+              "g": 0.8705882430076599,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:363",
+          "name": "S-Purple/--semi-S-Purple-2",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.9490196108818054,
+              "g": 0.7411764860153198,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:364",
+          "name": "S-Purple/--semi-S-Purple-3",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.9098039269447327,
+              "g": 0.615686297416687,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:365",
+          "name": "S-Purple/--semi-S-Purple-4",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.8627451062202454,
+              "g": 0.48627451062202454,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:366",
+          "name": "S-Purple/--semi-S-Purple-5",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.8069168329238892,
+              "g": 0.35638898611068726,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:367",
+          "name": "S-Purple/--semi-S-Purple-6",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.6666666865348816,
+              "g": 0.2823529541492462,
+              "b": 0.8588235378265381,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:368",
+          "name": "S-Purple/--semi-S-Purple-7",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.5333333611488342,
+              "g": 0.21568627655506134,
+              "b": 0.7215686440467834,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:369",
+          "name": "S-Purple/--semi-S-Purple-8",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.4117647111415863,
+              "g": 0.15294118225574493,
+              "b": 0.5803921818733215,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:370",
+          "name": "S-Purple/--semi-S-Purple-9",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.29411765933036804,
+              "g": 0.10588235408067703,
+              "b": 0.43921568989753723,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:271",
+          "name": "S-Cyan/--semi-S-Cyan-0",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.9333333373069763,
+              "g": 0.9921568632125854,
+              "b": 0.9764705896377563,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:251",
+          "name": "Main/--semi-brand-0",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.9960784316062927,
+              "b": 0.9411764740943909,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:252",
+          "name": "Main/--semi-brand-1",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.9843137264251709,
+              "b": 0.843137264251709,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:253",
+          "name": "Main/--semi-brand-2",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.9607843160629272,
+              "b": 0.6901960968971252,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:254",
+          "name": "Main/--semi-brand-3",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.9215686321258545,
+              "b": 0.5333333611488342,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:255",
+          "name": "Main/--semi-brand-4",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.8745098114013672,
+              "b": 0.3803921639919281,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:256",
+          "name": "Main/--semi-brand-5",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.8196078538894653,
+              "b": 0.2235294133424759,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:257",
+          "name": "Main/--semi-brand-6",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.8352941274642944,
+              "g": 0.6470588445663452,
+              "b": 0.1764705926179886,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:258",
+          "name": "Main/--semi-brand-7",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.6666666865348816,
+              "g": 0.4901960790157318,
+              "b": 0.13725490868091583,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:259",
+          "name": "Main/--semi-brand-8",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.501960813999176,
+              "g": 0.3450980484485626,
+              "b": 0.09803921729326248,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:260",
+          "name": "Main/--semi-brand-9",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.3333333432674408,
+              "g": 0.21568627655506134,
+              "b": 0.062745101749897,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:272",
+          "name": "S-Cyan/--semi-S-Cyan-1",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.8274509906768799,
+              "g": 0.9843137264251709,
+              "b": 0.9450980424880981,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:273",
+          "name": "S-Cyan/--semi-S-Cyan-2",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.658823549747467,
+              "g": 0.9647058844566345,
+              "b": 0.8980392217636108,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:274",
+          "name": "S-Cyan/--semi-S-Cyan-3",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.4941176474094391,
+              "g": 0.9490196108818054,
+              "b": 0.8588235378265381,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:275",
+          "name": "S-Cyan/--semi-S-Cyan-4",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.33725491166114807,
+              "g": 0.929411768913269,
+              "b": 0.8235294222831726,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:276",
+          "name": "S-Cyan/--semi-S-Cyan-5",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.18245291709899902,
+              "g": 0.9123159646987915,
+              "b": 0.7906721830368042,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:277",
+          "name": "S-Cyan/--semi-S-Cyan-6",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.14509804546833038,
+              "g": 0.7607843279838562,
+              "b": 0.6705882549285889,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:278",
+          "name": "S-Cyan/--semi-S-Cyan-7",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.10980392247438431,
+              "g": 0.6078431606292725,
+              "b": 0.5411764979362488,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:279",
+          "name": "S-Cyan/--semi-S-Cyan-8",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.0784313753247261,
+              "g": 0.4588235318660736,
+              "b": 0.4117647111415863,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:280",
+          "name": "S-Cyan/--semi-S-Cyan-9",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.05098039284348488,
+              "g": 0.30588236451148987,
+              "b": 0.27843138575553894,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:160",
+          "name": "red/--semi-red-0",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.9450980424880981,
+              "b": 0.9372549057006836,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:161",
+          "name": "red/--semi-red-1",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.8509804010391235,
+              "b": 0.8392156958580017,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:162",
+          "name": "red/--semi-red-2",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.686274528503418,
+              "b": 0.6745098233222961,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:163",
+          "name": "red/--semi-red-3",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.5137255191802979,
+              "b": 0.5137255191802979,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:164",
+          "name": "red/--semi-red-4",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.3490196168422699,
+              "b": 0.3686274588108063,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:165",
+          "name": "red/--semi-red-5",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.1882352977991104,
+              "b": 0.239215686917305,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:166",
+          "name": "red/--semi-red-6",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.8588235378265381,
+              "g": 0.13725490868091583,
+              "b": 0.20392157137393951,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:167",
+          "name": "red/--semi-red-7",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.7215686440467834,
+              "g": 0.0941176488995552,
+              "b": 0.1725490242242813,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:168",
+          "name": "red/--semi-red-8",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.5803921818733215,
+              "g": 0.05882352963089943,
+              "b": 0.1411764770746231,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:169",
+          "name": "red/--semi-red-9",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.43921568989753723,
+              "g": 0.0313725508749485,
+              "b": 0.10980392247438431,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:181",
+          "name": "blue/--semi-blue-0",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.9333333373069763,
+              "g": 0.9607843160629272,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:182",
+          "name": "blue/--semi-blue-1",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.8313725590705872,
+              "g": 0.8941176533699036,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:183",
+          "name": "blue/--semi-blue-2",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.658823549747467,
+              "g": 0.7803921699523926,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:184",
+          "name": "blue/--semi-blue-3",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.4901960790157318,
+              "g": 0.6627451181411743,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:185",
+          "name": "blue/--semi-blue-4",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.3176470696926117,
+              "g": 0.5372549295425415,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:186",
+          "name": "blue/--semi-blue-5",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.14901961386203766,
+              "g": 0.40784314274787903,
+              "b": 1,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:187",
+          "name": "blue/--semi-blue-6",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.10196078568696976,
+              "g": 0.32156863808631897,
+              "b": 0.8588235378265381,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:188",
+          "name": "blue/--semi-blue-7",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.062745101749897,
+              "g": 0.24313725531101227,
+              "b": 0.7215686440467834,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:189",
+          "name": "blue/--semi-blue-8",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.03529411926865578,
+              "g": 0.1725490242242813,
+              "b": 0.5803921818733215,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:190",
+          "name": "blue/--semi-blue-9",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.0117647061124444,
+              "g": 0.11372549086809158,
+              "b": 0.43921568989753723,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:261",
+          "name": "green/--semi-green-0",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.9254902005195618,
+              "g": 0.9803921580314636,
+              "b": 0.95686274766922,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:262",
+          "name": "green/--semi-green-1",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.8117647171020508,
+              "g": 0.9647058844566345,
+              "b": 0.8980392217636108,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:263",
+          "name": "green/--semi-green-2",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.6352941393852234,
+              "g": 0.929411768913269,
+              "b": 0.8078431487083435,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:264",
+          "name": "green/--semi-green-3",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.47058823704719543,
+              "g": 0.8901960849761963,
+              "b": 0.7254902124404907,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:265",
+          "name": "green/--semi-green-4",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.3176470696926117,
+              "g": 0.8549019694328308,
+              "b": 0.6549019813537598,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:266",
+          "name": "green/--semi-green-5",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.1764705926179886,
+              "g": 0.8196078538894653,
+              "b": 0.5882353186607361,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:267",
+          "name": "green/--semi-green-6",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.1411764770746231,
+              "g": 0.6823529601097107,
+              "b": 0.49803921580314636,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:268",
+          "name": "green/--semi-green-7",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.10588235408067703,
+              "g": 0.545098066329956,
+              "b": 0.40392157435417175,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:269",
+          "name": "green/--semi-green-8",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.07450980693101883,
+              "g": 0.40784314274787903,
+              "b": 0.30588236451148987,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:270",
+          "name": "green/--semi-green-9",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.0470588244497776,
+              "g": 0.27450981736183167,
+              "b": 0.2078431397676468,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:301",
+          "name": "orange/--semi-orange-0",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.9725490212440491,
+              "b": 0.929411768913269,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:302",
+          "name": "orange/--semi-orange-1",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.9254902005195618,
+              "b": 0.8235294222831726,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:303",
+          "name": "orange/--semi-orange-2",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.843137264251709,
+              "b": 0.6431372761726379,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:304",
+          "name": "orange/--semi-orange-3",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.7450980544090271,
+              "b": 0.46666666865348816,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:305",
+          "name": "orange/--semi-orange-4",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.6392157077789307,
+              "b": 0.2862745225429535,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:306",
+          "name": "orange/--semi-orange-5",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 1,
+              "g": 0.5176470875740051,
+              "b": 0.10980392247438431,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:307",
+          "name": "orange/--semi-orange-6",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.8588235378265381,
+              "g": 0.3921568691730499,
+              "b": 0.07058823853731155,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:308",
+          "name": "orange/--semi-orange-7",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.7215686440467834,
+              "g": 0.2823529541492462,
+              "b": 0.03529411926865578,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:309",
+          "name": "orange/--semi-orange-8",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.5803921818733215,
+              "g": 0.1882352977991104,
+              "b": 0.0117647061124444,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        },
+        {
+          "id": "VariableID:8:310",
+          "name": "orange/--semi-orange-9",
+          "resolvedType": "COLOR",
+          "valuesByMode": {
+            "light": {
+              "r": 0.43921568989753723,
+              "g": 0.11372549086809158,
+              "b": 0,
+              "a": 1
+            }
+          },
+          "description": "",
+          "hiddenFromPublishing": false,
+          "scopes": [
+            "ALL_SCOPES"
+          ]
+        }
+      ]
+    }
+  ],
+  "exportedAt": "2026-02-08T15:16:32.068Z"
+}
