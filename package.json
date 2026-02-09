@@ -1,0 +1,9 @@
+{
+  "name": "variable-design-tokens",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/transform.mjs"
+  }
+}
