@@ -1,0 +1,89 @@
+#!/usr/bin/env node
+
+/**
+ * Design Token 转换主入口
+ * 读取 Figma 导出的 JSON 文件，生成三端可用的 token 文件
+ *
+ * 只使用：基础色彩梯度.json + 语义色.json
+ *
+ * 用法: node scripts/transform.mjs
+ */
+
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { join, dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+import { buildVariableRegistry, extractTokens } from './parsers/parse-figma-variables.mjs';
+import { generateSwift } from './generators/ios.mjs';
+import { generateColorsXml, generateKotlin } from './generators/android.mjs';
+import { generateCss, generateTs } from './generators/web.mjs';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const ROOT = join(__dirname, '..');
+
+// ─── 读取源文件 ───
+
+function readJson(filename) {
+  const path = join(ROOT, filename);
+  if (!existsSync(path)) {
+    console.warn(`[WARN] File not found: ${filename}, skipping`);
+    return null;
+  }
+  const content = readFileSync(path, 'utf-8');
+  return JSON.parse(content);
+}
+
+console.log('Reading source files...');
+const paletteJson = readJson('基础色彩梯度.json');
+const semanticJson = readJson('语义色.json');
+
+if (!paletteJson || !semanticJson) {
+  console.error('[ERROR] Required Figma JSON files are missing (基础色彩梯度.json, 语义色.json)');
+  process.exit(1);
+}
+
+// ─── 解析 ───
+
+console.log('Parsing Figma variables...');
+const registry = buildVariableRegistry(paletteJson, semanticJson);
+const tokens = extractTokens(registry);
+
+console.log(`  Palette: ${Object.keys(tokens.palette.light).length} variables`);
+console.log(`  Semantic: ${Object.keys(tokens.semantic.light).length} variables`);
+
+// ─── 生成产物 ───
+
+function ensureDir(dir) {
+  if (!existsSync(dir)) mkdirSync(dir, { recursive: true });
+}
+
+function writeOutput(subdir, filename, content) {
+  const dir = join(ROOT, 'output', subdir);
+  ensureDir(dir);
+  const path = join(dir, filename);
+  writeFileSync(path, content, 'utf-8');
+  console.log(`  -> output/${subdir}/${filename}`);
+}
+
+console.log('\nGenerating outputs...');
+
+// iOS
+console.log('iOS:');
+const swift = generateSwift(tokens);
+writeOutput('ios', 'DesignTokens.swift', swift);
+
+// Android
+console.log('Android:');
+const colorsXml = generateColorsXml(tokens);
+writeOutput('android', 'design_tokens_colors.xml', colorsXml);
+const kotlin = generateKotlin(tokens);
+writeOutput('android', 'DesignTokens.kt', kotlin);
+
+// Web
+console.log('Web:');
+const css = generateCss(tokens);
+writeOutput('web', 'design-tokens.css', css);
+const ts = generateTs(tokens);
+writeOutput('web', 'design-tokens.ts', ts);
+
+console.log('\nDone!');
