@@ -4,7 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - '*.json'
+      - '基础色彩梯度.json'
+      - '语义色.json'
   workflow_dispatch:
 
 jobs:

@@ -1,6 +1,7 @@
 /**
  * iOS Swift 生成器
  * 生成 DesignTokens.swift
+ * 只包含 palette（基础色彩梯度）和 semantic（语义色）
  */
 
 const HEADER = `// 自动生成文件，请勿手动修改
@@ -70,7 +71,7 @@ function groupByPrefix(vars) {
   return groups;
 }
 
-export function generateSwift(tokens, dlsTokens) {
+export function generateSwift(tokens) {
   const lines = [HEADER];
 
   lines.push('public enum DesignTokens {');
@@ -109,78 +110,6 @@ export function generateSwift(tokens, dlsTokens) {
     }
   }
   lines.push('    }');
-  lines.push('');
-
-  // MARK: - Global Colors (Light)
-  lines.push('    // MARK: - Global Colors (Light)');
-  lines.push('    public enum GlobalLight {');
-  const lightColorVars = Object.entries(tokens.global.light).filter(([, d]) => d.resolvedType === 'COLOR');
-  for (const [name, data] of lightColorVars) {
-    const propName = toSwiftPropertyName(name);
-    if (data.a != null && data.a < 1) {
-      lines.push(`        public static let ${propName} = ${hexToSwiftColor(data.hex, data.a)}`);
-    } else {
-      lines.push(`        public static let ${propName} = ${hexToSwiftColor(data.hex)}`);
-    }
-  }
-  lines.push('    }');
-  lines.push('');
-
-  // MARK: - Global Colors (Dark)
-  lines.push('    // MARK: - Global Colors (Dark)');
-  lines.push('    public enum GlobalDark {');
-  const darkColorVars = Object.entries(tokens.global.dark).filter(([, d]) => d.resolvedType === 'COLOR');
-  for (const [name, data] of darkColorVars) {
-    const propName = toSwiftPropertyName(name);
-    if (data.a != null && data.a < 1) {
-      lines.push(`        public static let ${propName} = ${hexToSwiftColor(data.hex, data.a)}`);
-    } else {
-      lines.push(`        public static let ${propName} = ${hexToSwiftColor(data.hex)}`);
-    }
-  }
-  lines.push('    }');
-  lines.push('');
-
-  // MARK: - Border Radius
-  lines.push('    // MARK: - Border Radius');
-  lines.push('    public enum BorderRadius {');
-  const radiusVars = Object.entries(tokens.global.light).filter(
-    ([name, d]) => d.resolvedType === 'FLOAT' && name.includes('border-radius')
-  );
-  for (const [name, data] of radiusVars) {
-    const propName = toSwiftPropertyName(name.replace('semi-border-radius-', ''));
-    lines.push(`        public static let ${propName}: CGFloat = ${data.value}`);
-  }
-  lines.push('    }');
-  lines.push('');
-
-  // MARK: - DLS Brand Colors
-  if (dlsTokens && Object.keys(dlsTokens.colors).length > 0) {
-    lines.push('    // MARK: - DLS Brand Colors');
-    lines.push('    public enum DLS {');
-    for (const [name, hex] of Object.entries(dlsTokens.colors)) {
-      const propName = toSwiftPropertyName(name.replace(/^dls-color-/, ''));
-      lines.push(`        public static let ${propName} = ${hexToSwiftColor(hex)}`);
-    }
-    lines.push('    }');
-    lines.push('');
-  }
-
-  // MARK: - Typography
-  if (dlsTokens) {
-    lines.push('    // MARK: - Typography');
-    lines.push('    public enum Typography {');
-    for (const [, family] of Object.entries(dlsTokens.typography.fontFamilies)) {
-      lines.push(`        public static let fontFamily = "${family}"`);
-    }
-    for (const [index, size] of Object.entries(dlsTokens.typography.fontSizes)) {
-      lines.push(`        public static let fontSize${index}: CGFloat = ${size}`);
-    }
-    for (const [index, lh] of Object.entries(dlsTokens.typography.lineHeights)) {
-      lines.push(`        public static let lineHeight${index}: CGFloat = ${lh}`);
-    }
-    lines.push('    }');
-  }
 
   lines.push('}');
   lines.push('');

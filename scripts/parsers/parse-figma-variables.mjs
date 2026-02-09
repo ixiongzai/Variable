@@ -1,6 +1,6 @@
 /**
  * 解析 Figma 变量 JSON 文件
- * 支持：基础色彩梯度.json、语义色.json、.global.json、variables.json
+ * 支持：基础色彩梯度.json、语义色.json
  */
 
 /**
@@ -107,19 +107,17 @@ export function parseFigmaCollection(json) {
 }
 
 /**
- * 解析所有 Figma JSON 并构建完整的变量表
+ * 解析 Figma JSON 并构建变量表
  * 支持解析 VARIABLE_ALIAS 引用
  */
-export function buildVariableRegistry(paletteJson, semanticJson, globalJson) {
+export function buildVariableRegistry(paletteJson, semanticJson) {
   const palette = parseFigmaCollection(paletteJson);
   const semantic = parseFigmaCollection(semanticJson);
-  const global = parseFigmaCollection(globalJson);
 
   // 合并所有变量到一个 registry
   const allVariables = new Map();
   for (const [id, v] of palette.variables) allVariables.set(id, { ...v, collection: 'palette' });
   for (const [id, v] of semantic.variables) allVariables.set(id, { ...v, collection: 'semantic' });
-  for (const [id, v] of global.variables) allVariables.set(id, { ...v, collection: 'global' });
 
   /**
    * 解析一个变量值，如果是 alias 则递归查找
@@ -143,7 +141,6 @@ export function buildVariableRegistry(paletteJson, semanticJson, globalJson) {
   return {
     palette,
     semantic,
-    global,
     allVariables,
     resolveValue,
     resolveVariableInMode(variableId, modeName) {
@@ -172,9 +169,8 @@ export function buildVariableRegistry(paletteJson, semanticJson, globalJson) {
  */
 export function extractTokens(registry) {
   const tokens = {
-    palette: { light: {}, dark: {} },
+    palette: { light: {} },
     semantic: { light: {} },
-    global: { light: {}, dark: {} },
   };
 
   // 提取 palette（基础色彩梯度）
@@ -207,32 +203,6 @@ export function extractTokens(registry) {
         a: val.a,
         originalName: variable.name,
       };
-    }
-  }
-
-  // 提取 global（含 light/dark）
-  for (const [, variable] of registry.global.variables) {
-    for (const mode of ['light', 'dark']) {
-      const val = registry.resolveVariableInMode(variable.id, mode);
-      if (!val) continue;
-      const name = nameToKebab(variable.name);
-      if (val.type === 'color') {
-        tokens.global[mode][name] = {
-          hex: val.hex,
-          r: val.r,
-          g: val.g,
-          b: val.b,
-          a: val.a,
-          resolvedType: 'COLOR',
-          originalName: variable.name,
-        };
-      } else if (val.type === 'literal') {
-        tokens.global[mode][name] = {
-          value: val.value,
-          resolvedType: variable.resolvedType,
-          originalName: variable.name,
-        };
-      }
     }
   }
 

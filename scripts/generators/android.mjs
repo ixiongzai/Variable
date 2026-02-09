@@ -1,6 +1,7 @@
 /**
  * Android 生成器
  * 生成 design_tokens_colors.xml 和 DesignTokens.kt
+ * 只包含 palette（基础色彩梯度）和 semantic（语义色）
  */
 
 /**
@@ -40,7 +41,7 @@ function toKotlinName(kebabName) {
 
 // ─── XML Generator ───
 
-export function generateColorsXml(tokens, dlsTokens) {
+export function generateColorsXml(tokens) {
   const lines = [
     '<?xml version="1.0" encoding="utf-8"?>',
     '<!-- 自动生成文件，请勿手动修改 -->',
@@ -62,26 +63,6 @@ export function generateColorsXml(tokens, dlsTokens) {
     const xmlName = `semantic_${toXmlName(name)}`;
     lines.push(`    <color name="${xmlName}">${hexToAndroidColor(data.hex, data.a)}</color>`);
   }
-  lines.push('');
-
-  // Global colors (light mode only for XML)
-  lines.push('    <!-- Global Colors (Light) -->');
-  const lightColorVars = Object.entries(tokens.global.light).filter(([, d]) => d.resolvedType === 'COLOR');
-  for (const [name, data] of lightColorVars) {
-    const xmlName = `global_${toXmlName(name)}`;
-    const a = data.a != null ? data.a : 1;
-    lines.push(`    <color name="${xmlName}">${hexToAndroidColor(data.hex, a)}</color>`);
-  }
-  lines.push('');
-
-  // DLS brand colors
-  if (dlsTokens && Object.keys(dlsTokens.colors).length > 0) {
-    lines.push('    <!-- DLS Brand Colors -->');
-    for (const [name, hex] of Object.entries(dlsTokens.colors)) {
-      const xmlName = toXmlName(name);
-      lines.push(`    <color name="${xmlName}">${hexToAndroidColor(hex)}</color>`);
-    }
-  }
 
   lines.push('</resources>');
   lines.push('');
@@ -91,7 +72,7 @@ export function generateColorsXml(tokens, dlsTokens) {
 
 // ─── Kotlin Generator ───
 
-export function generateKotlin(tokens, dlsTokens) {
+export function generateKotlin(tokens) {
   const lines = [
     'package com.enactflow.youyouai.ui.compose.theme',
     '',
@@ -113,80 +94,14 @@ export function generateKotlin(tokens, dlsTokens) {
   lines.push('    }');
   lines.push('');
 
-  // Semantic (Light)
-  lines.push('    // Semantic Colors (Light)');
-  lines.push('    object SemanticLight {');
+  // Semantic
+  lines.push('    // Semantic Colors');
+  lines.push('    object Semantic {');
   for (const [name, data] of Object.entries(tokens.semantic.light)) {
     const ktName = toKotlinName(name);
     lines.push(`        val ${ktName} = ${hexToComposeColor(data.hex, data.a)}`);
   }
   lines.push('    }');
-  lines.push('');
-
-  // Global Light
-  lines.push('    // Global Colors (Light)');
-  lines.push('    object GlobalLight {');
-  const lightColorVars = Object.entries(tokens.global.light).filter(([, d]) => d.resolvedType === 'COLOR');
-  for (const [name, data] of lightColorVars) {
-    const ktName = toKotlinName(name);
-    const a = data.a != null ? data.a : 1;
-    lines.push(`        val ${ktName} = ${hexToComposeColor(data.hex, a)}`);
-  }
-  lines.push('    }');
-  lines.push('');
-
-  // Global Dark
-  lines.push('    // Global Colors (Dark)');
-  lines.push('    object GlobalDark {');
-  const darkColorVars = Object.entries(tokens.global.dark).filter(([, d]) => d.resolvedType === 'COLOR');
-  for (const [name, data] of darkColorVars) {
-    const ktName = toKotlinName(name);
-    const a = data.a != null ? data.a : 1;
-    lines.push(`        val ${ktName} = ${hexToComposeColor(data.hex, a)}`);
-  }
-  lines.push('    }');
-  lines.push('');
-
-  // Border Radius
-  lines.push('    // Border Radius');
-  lines.push('    object BorderRadius {');
-  const radiusVars = Object.entries(tokens.global.light).filter(
-    ([name, d]) => d.resolvedType === 'FLOAT' && name.includes('border-radius')
-  );
-  for (const [name, data] of radiusVars) {
-    const ktName = toKotlinName(name.replace('semi-border-radius-', ''));
-    lines.push(`        const val ${ktName} = ${data.value}f`);
-  }
-  lines.push('    }');
-  lines.push('');
-
-  // DLS Brand Colors
-  if (dlsTokens && Object.keys(dlsTokens.colors).length > 0) {
-    lines.push('    // DLS Brand Colors');
-    lines.push('    object DLS {');
-    for (const [name, hex] of Object.entries(dlsTokens.colors)) {
-      const ktName = toKotlinName(name.replace(/^dls-color-/, ''));
-      lines.push(`        val ${ktName} = ${hexToComposeColor(hex)}`);
-    }
-    lines.push('    }');
-    lines.push('');
-  }
-
-  // Typography
-  if (dlsTokens) {
-    lines.push('    // Typography');
-    lines.push('    object Typography {');
-    for (const [, family] of Object.entries(dlsTokens.typography.fontFamilies)) {
-      lines.push(`        const val FontFamily = "${family}"`);
-    }
-    for (const [index, size] of Object.entries(dlsTokens.typography.fontSizes)) {
-      lines.push(`        const val FontSize${index} = ${size}`);
-    }
-    for (const [index, lh] of Object.entries(dlsTokens.typography.lineHeights)) {
-      lines.push(`        const val LineHeight${index} = ${lh}`);
-    }
-    lines.push('    }');
-  }
 
   lines.push('}');
   lines.push('');
